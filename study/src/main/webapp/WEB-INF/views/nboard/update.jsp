@@ -81,7 +81,7 @@
 			
 			<tr>
 				<td style="colspan:2; height:200px;">내용</td>
-				<td><textarea class="chk" id="memo" name="memo" cols="50" rows="13" title="내용을 입력해주세요."><%=memo %></textarea></td>
+				<td><textarea class="chk" id="memo" name="memo" cols="50" rows="13" title="내용을 입력해주세요." style="resize:none;"><%=memo %></textarea></td>
 			</tr>
 			
 			<tr>

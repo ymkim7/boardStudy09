@@ -19,6 +19,8 @@
 	String sqlDelete = "DELETE FROM MP_BOARD WHERE idx =";
 	String sqlUpdate = "SELECT name, title, memo, password FROM MP_BOARD WHERE idx=";
 	String sqlPaging = "SELECT idx, name, title, time FROM MP_BOARD ORDER BY idx DESC LIMIT ";
+	String sqlSearchA = "SELECT idx, name, title, time FROM MP_BOARD WHERE ";
+	String sqlSearchB = "SELECT COUNT(*) FROM MP_BOARD WHERE ";
 %>
 
 <!DOCTYPE html>

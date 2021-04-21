@@ -28,7 +28,7 @@
 	
 	<script type="text/javascript">
 		self.window.alert("삭제 완료");
-		location.href = "index.jsp";
+		window.close();
 	</script>
 	
 	<%

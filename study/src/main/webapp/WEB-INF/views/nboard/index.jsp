@@ -142,7 +142,7 @@
 	</div>
 	<hr/>
 	
-	<div style="text-align:center;">
+	<div style="float:left;">
 		<form name="searchForm" method="post" action="index_search.jsp?pg=<%=pg%>">
 			<!-- 검색키 : search key -->
 			<select name="sk">

@@ -35,15 +35,27 @@
             }
 		});
 
-		$("#deleteBtn").on("click", function() {
-			var deleteYN = confirm("삭제하시겠습니까?");
-            
-            if(deleteYN == true) {
-	            location.href = "delete.jsp?idx=<%=idx%>&pg=<%=pg%>";
-            }
-		});
+		if(actionDelete()) {
+			location.reload();
+		}
 		
 	});
+	
+	function actionDelete() {
+		$("#deleteBtn").on("click", function() {
+			var deleteYN = confirm("삭제하시겠습니까?");
+			var name = "popupTest";
+            var option = "width = 700, height = 300, top = 100, left = 200, location = no";
+            
+            if(deleteYN == true) {
+	            var popup = window.open("delete.jsp?idx=<%=idx%>&pg=<%=pg%>", name, option);
+				popup.onbeforeunload = function() {
+					location.href = "index.jsp";
+				}
+            }
+
+		});
+	}
 	
 </script>
 <meta charset="utf-8">

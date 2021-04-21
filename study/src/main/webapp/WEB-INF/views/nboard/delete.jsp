@@ -30,13 +30,13 @@
 <meta charset="utf-8">
 <title>게시판</title>
 </head>
-<body>
+<body style="width:500px;">
 	<hr/>
 	<h4>게시글 삭제화면</h4>
 	<hr/>
 	
 	<form name="deleteForm" method="post" action="delete_ok.jsp?idx=<%=idx %>&pg=<%=pg%>">
-		<table>
+		<table style="width:500px;">
 			<tr>
 				<td colspan="2" style="align:center;">비밀번호를 입력해주세요</td>
 			</tr>
